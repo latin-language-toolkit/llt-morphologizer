@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["LFDM"]
   spec.email         = ["1986gh@gmail.com"]
   spec.summary       = %q{Morphological parsing of Latin forms}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.description   = spec.summary
+  spec.homepage      = "http://www.latin-language-toolkit.net"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)

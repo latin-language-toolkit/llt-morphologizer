@@ -14,7 +14,7 @@ end
 
 $LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
 require 'llt/morphologizer'
-require 'llt/db_handler_stub'
+require 'llt/db_handler/stub'
 
 if defined?(LLT::Logger)
   LLT::Logger.level = nil

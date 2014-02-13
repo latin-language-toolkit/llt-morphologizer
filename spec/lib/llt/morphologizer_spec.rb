@@ -5,13 +5,16 @@ describe LLT::Morphologizer do
     LLT::Morphologizer::VERSION.should_not be_nil
   end
 
-  let(:morphologizer) { LLT::Morphologizer.new }
+  let(:stub_db) { LLT::DbHandler::Stub.new }
+  let(:morphologizer) { LLT::Morphologizer.new(db: stub_db) }
 
   def morph_stub(word)
-    m = LLT::Morphologizer.new
+    m = LLT::Morphologizer.new(db: LLT::DbHandler::Stub.new)
     m.send(:setup, word)
     m
   end
+
+  before(:all) { LLT::DbHandler::Stub.setup }
 
   describe "#personal_pronons" do
     # this tests some private methods just to be safe
@@ -483,10 +486,10 @@ describe LLT::Morphologizer do
           attr_reader :forms
           def initialize; @forms = []; end
           def <<(forms); @forms += forms; end
-        end
+        end.new
       end
 
-      it "adds the result to the given object if #<< is implemented" do
+      it "adds the result to the given object if is #<< implemented" do
         forms = morphologizer.morphologize("est", add_to: token_dummy)
         token_dummy.forms.should == forms
       end

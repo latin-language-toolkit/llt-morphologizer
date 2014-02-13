@@ -24,8 +24,11 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "simplecov", "~> 0.7"
   spec.add_development_dependency "llt-db_handler-stub"
 
+  spec.add_dependency "llt-constants"
   spec.add_dependency "llt-core"
+  spec.add_dependency "llt-core_extensions"
   spec.add_dependency "llt-db_handler"
   spec.add_dependency "llt-form_builder"
   spec.add_dependency "llt-helpers"
+  spec.add_dependency "llt-logger"
 end

@@ -4,13 +4,13 @@ source 'https://rubygems.org'
 gemspec
 gem 'coveralls', require: false
 
-gem 'llt-core', git: 'git@github.com:latin-language-toolkit/llt-core.git'
-gem 'llt-core_extensions', git: 'git@github.com:latin-language-toolkit/llt-core_extensions.git'
-gem 'llt-constants', git: 'git@github.com:latin-language-toolkit/llt-constants.git'
-gem 'llt-db_handler', git: 'git@github.com:latin-language-toolkit/llt-db_handler.git'
-gem 'llt-db_handler-stub', git: 'git@github.com:latin-language-toolkit/llt-db_handler-stub.git'
-gem 'llt-form_builder', git: 'git@github.com:latin-language-toolkit/llt-form_builder.git'
-gem 'llt-helpers', git: 'git@github.com:latin-language-toolkit/llt-helpers.git'
+gem 'llt-core', git: 'git://github.com/latin-language-toolkit/llt-core.git'
+gem 'llt-core_extensions', git: 'git://github.com/latin-language-toolkit/llt-core_extensions.git'
+gem 'llt-constants', git: 'git://github.com/latin-language-toolkit/llt-constants.git'
+gem 'llt-db_handler', git: 'git://github.com/latin-language-toolkit/llt-db_handler.git'
+gem 'llt-db_handler-stub', git: 'git://github.com/latin-language-toolkit/llt-db_handler-stub.git'
+gem 'llt-form_builder', git: 'git://github.com/latin-language-toolkit/llt-form_builder.git'
+gem 'llt-helpers', git: 'git://github.com/latin-language-toolkit/llt-helpers.git'
 gem 'llt-logger', git: 'git://github.com/latin-language-toolkit/llt-logger.git'
 
 platform :ruby do
